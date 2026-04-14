@@ -3,7 +3,7 @@ name: Run Tests
 on:
   # PIPELINE BUG 1: 'pushh' is a typo -- not a valid GitHub Actions event.
   # The workflow will never trigger on push.
-  pushh:
+  push:
     branches: [main]
 
 jobs:
