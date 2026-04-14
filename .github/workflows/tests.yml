@@ -25,7 +25,7 @@ jobs:
         run: pip install pytest pytest-cov
 
       - name: Run tests
-        run: pytest test/ --cov=src --cov-report=term-missing
+        run: pytest tests/ --cov=src --cov-report=term-missing
           # PIPELINE BUG 3: Wrong test path -- 'test/' does not exist.
           # The correct directory is 'tests/' (with an s).
           
