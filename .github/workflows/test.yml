@@ -14,7 +14,8 @@ jobs:
       # PIPELINE BUG 2: Missing actions/checkout step entirely.
       # The runner has no code to work with -- all subsequent steps will fail
       # because the repo files do not exist in the working directory.
-
+      - uses: actions/checkout@v4
+      
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
